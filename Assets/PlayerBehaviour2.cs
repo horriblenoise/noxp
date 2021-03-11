@@ -18,6 +18,7 @@ public class PlayerBehaviour2 : MonoBehaviour {
     {
 
         Vector3 inputVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
         Rigidbody ourRigidBody = GetComponent<Rigidbody>();
         ourRigidBody.velocity = inputVector * speed;
        
